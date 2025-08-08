@@ -1,0 +1,24 @@
+duffel:
+  api-key: ${DUFFEL_API_KEY}
+  base-url: https://api.duffel.com
+spring:
+  application:
+    name: flight-mcp
+  main:
+    web-application-type: none
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: flight-mcp
+        version: 0.0.1
+jpa:
+  hibernate:
+    ddl-auto: none
+logging:
+  pattern:
+    console: ""
+  level:
+    org:
+      springframework: DEBUG
+    root: DEBUG
